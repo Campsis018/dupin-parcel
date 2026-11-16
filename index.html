@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#fbf8f3">
+  <meta name="description" content="独品一折快递超市自助询价：填写目的地、重量和包装尺寸，查看清楚的预估运费及会员优惠。">
+  <title>独品一折 · 寄件询价</title>
+  <style>:root{--bg:#fbf8f3;--surface:#fff;--ink:#292c29;--muted:#797d75;--line:#e9e8e0;--accent:#ce5035;--accent-dark:#b73e26;--accent-pale:#fff2e9;--green:#44735c;--green-bg:#eef5ee;--radius:22px}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;-webkit-font-smoothing:antialiased;font-size:15px;line-height:1.6}button,input,select{font:inherit}button,a,input,select{-webkit-tap-highlight-color:transparent}button{cursor:pointer}a{color:inherit;text-decoration:none}[hidden]{display:none!important}.shell{max-width:760px;margin:0 auto;padding:32px 28px 20px}.brand{display:flex;align-items:center;justify-content:space-between;padding-bottom:28px;border-bottom:1px solid var(--line)}.brand a{display:flex;align-items:center;gap:11px;font-size:18px;letter-spacing:.07em;font-weight:700}.brandmark{display:grid;place-items:center;width:44px;height:44px;background:var(--accent);color:#fff;border-radius:14px}.brandmark svg{width:29px;height:29px}.brand-sub{display:block;color:var(--muted);font-size:10px;letter-spacing:.08em;font-weight:400;margin-top:1px}.version{font-size:11px;padding:5px 11px;border:1px solid #deded2;border-radius:30px;color:#696d62;white-space:nowrap}.intro{padding:33px 0 25px}.eyebrow{font-size:11px;color:var(--accent);letter-spacing:.15em;font-weight:600}h1{font-size:31px;letter-spacing:-.035em;line-height:1.35;margin:9px 0 11px;font-weight:750}.intro p{margin:0;font-size:13px;color:var(--muted)}.progress{display:flex;align-items:center;gap:16px;margin:0 4px 20px;max-width:360px;font-size:12px;color:#9a9c93}.progress span{display:flex;align-items:center;gap:7px;white-space:nowrap}.progress .active{color:var(--ink);font-weight:600}.progress i{font-style:normal;display:grid;place-items:center;width:22px;height:22px;border:1px solid #d7dbcf;border-radius:50%;font-size:11px}.progress .active i{background:var(--ink);color:#fff;border-color:var(--ink)}.progress b{height:1px;flex:1;background:#dfe2d7}.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:27px 29px 22px;box-shadow:0 8px 28px #292c2904}fieldset{border:0;padding:0 0 24px;margin:0 0 24px;border-bottom:1px solid var(--line);min-width:0}legend{display:flex;align-items:center;gap:8px;font-size:16px;font-weight:650;margin:0 0 14px;padding:0;float:left;width:100%}legend+*{clear:both}.step-dot{font-size:10px;letter-spacing:.04em;color:var(--accent);background:var(--accent-pale);border-radius:6px;padding:3px 5px;font-weight:600}.field{margin-bottom:11px}.field label,.dimension-inputs label{display:block;font-size:12px;font-weight:500;margin-bottom:6px;color:#676c62}select,input[type=text]{border:1px solid #dedfd6;border-radius:10px;background:#fff;color:var(--ink);min-height:48px;padding:10px 13px;outline:none;transition:border-color .15s,box-shadow .15s;width:100%;font-size:15px}select:focus,input[type=text]:focus{border-color:var(--accent);box-shadow:0 0 0 3px #ce503512}input::placeholder{color:#a9ada3;font-size:14px}select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14'%3E%3Cpath d='m4 5 3 3 3-3' fill='none' stroke='%23797d75' stroke-width='1.4'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:34px}.muted-note,small{font-size:11px;color:var(--muted);line-height:1.6}.muted-note{margin:7px 0 0}.segmented{display:flex;gap:4px;padding:4px;border-radius:11px;background:#f4f4ee;margin-bottom:14px;clear:both}.segmented button{flex:1;background:transparent;border:0;border-radius:8px;padding:8px 5px;font-size:12px;color:#83877e;min-height:36px}.segmented button.selected{background:white;color:var(--ink);font-weight:600;box-shadow:0 1px 4px #292c2910}.weight-row{display:flex;gap:10px;margin-bottom:7px}.weight-row>select{flex:0 0 94px;width:94px}.grow{flex:1;min-width:0}.range-fields{display:flex;align-items:center;gap:8px}.range-fields input{min-width:0}.range-fields>span{color:#a4a79e}.optional{margin-left:auto;font-size:11px;color:#969b8e;font-weight:400}.check-row{display:flex;align-items:center;gap:9px;font-size:13px}.check-row input{width:17px;height:17px;accent-color:var(--accent);margin:0}.size-toggle{clear:both;padding-top:2px;margin-bottom:12px}.dimension-inputs{display:flex;gap:8px;align-items:end;margin:15px 0 6px}.dimension-inputs>div{flex:1;min-width:0}.multiply{align-self:center;color:#adb1a4;margin-top:23px}.unit-input{position:relative}.unit-input input{padding:10px 29px 10px 11px}.unit-input span{position:absolute;right:10px;top:15px;font-size:11px;color:#9b9f94;pointer-events:none}.info-note{background:#f6f7f1;border-radius:10px;display:flex;align-items:flex-start;gap:7px;padding:10px 11px;margin:0;color:#7a8170;font-size:11px;line-height:1.75}.info-note svg{width:16px;height:16px;flex-shrink:0;margin-top:2px}.member-box{display:flex;align-items:center;gap:12px;padding:14px;border:1px solid #e1e9de;border-radius:12px;background:#f5f8f2;cursor:pointer;margin:0 0 23px}.member-icon{display:grid;place-items:center;width:32px;height:32px;border-radius:9px;background:#e4ecdf;color:#5b7450;font-size:24px}.member-copy{flex:1}.member-copy strong{display:block;font-size:13px;font-weight:600}.member-copy small{display:block;font-size:10px;margin-top:2px;color:#89917f}.member-box input{appearance:none;-webkit-appearance:none;position:relative;width:37px;height:22px;background:#d5dccc;border-radius:20px;flex-shrink:0;margin:0;transition:background .2s;cursor:pointer}.member-box input:before{content:"";position:absolute;top:3px;left:3px;width:16px;height:16px;border-radius:50%;background:#fff;box-shadow:0 1px 3px #0001;transition:transform .2s}.member-box input:checked{background:#58794a}.member-box input:checked:before{transform:translateX(15px)}.member-box input:focus-visible{outline:3px solid #72995c66;outline-offset:3px}.primary{display:flex;align-items:center;justify-content:center;gap:14px;width:100%;min-height:52px;background:var(--accent);border:0;border-radius:12px;color:#fff;font-size:15px;font-weight:600;box-shadow:0 4px 9px #ce503515;transition:background .15s,transform .15s}.primary:hover{background:var(--accent-dark)}.primary:active{transform:translateY(1px)}.primary span{font-size:20px;font-weight:400}.primary:focus-visible{outline:3px solid #ce50354d;outline-offset:3px}.privacy-note{font-size:10px;text-align:center;color:#9b9e94;margin:11px 0 0}.bottom-note{text-align:center;font-size:11px;color:#979c8e;margin:15px 8px 0}footer{display:flex;justify-content:space-between;gap:12px;border-top:1px solid var(--line);padding-top:20px;margin-top:34px;font-size:10px;color:#9b9f93}.error{border:1px solid #edb7a9;background:#fff3ee;color:#a83920;padding:11px 13px;border-radius:10px;margin-bottom:23px;font-size:12px}.error:empty{display:none}.back-link{background:transparent;border:0;color:#777e6e;padding:0;font-size:12px;margin:27px 0 0}.back-link:hover{color:var(--accent)}.result-intro{padding-top:23px}.result-intro h1{outline:none}.quote-hero{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:27px;text-align:center;position:relative}.quote-label{font-size:12px;color:var(--muted)}.quote-money{display:flex;align-items:baseline;justify-content:center;gap:4px;margin:8px 0 12px;color:var(--accent);font-size:42px;font-weight:750;letter-spacing:-.045em;line-height:1.35;font-variant-numeric:tabular-nums}.quote-money .currency{font-size:21px;letter-spacing:0;font-weight:500}.quote-money .suffix{font-size:12px;letter-spacing:0;font-weight:400;color:var(--muted);margin-left:4px}.quote-money.is-range{font-size:34px}.pills{display:flex;justify-content:center;gap:7px;flex-wrap:wrap}.pill{font-size:10px;padding:3px 9px;background:#f5f5ef;border-radius:20px;color:#7c8171}.pill.green{background:var(--green-bg);color:var(--green)}.quote-callout{margin:19px 0 0;background:var(--accent-pale);border:1px solid #f7dfcc;border-radius:12px;padding:13px 15px;font-size:12px;color:#9b6649;line-height:1.75}.section-heading{display:flex;align-items:baseline;justify-content:space-between;margin:26px 0 12px;gap:10px}.section-heading h2{font-size:15px;margin:0;font-weight:650}.section-heading span{font-size:10px;color:var(--muted)}.scenario-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.scenario{padding:20px;background:white;border:1px solid var(--line);border-radius:15px;min-width:0}.scenario-label{font-size:10px;color:var(--muted);display:flex;justify-content:space-between}.scenario-label b{font-weight:400;color:#b2b4ac}.scenario-price{font-size:24px;font-weight:700;letter-spacing:-.04em;margin:9px 0 17px;color:var(--ink);font-variant-numeric:tabular-nums}.scenario-price span{font-size:13px;font-weight:400;margin-right:3px}.details-list{margin:0}.details-list>div{display:flex;justify-content:space-between;gap:10px;font-size:11px;padding:7px 0;border-top:1px solid #f0f0e8}.details-list dt{color:var(--muted)}.details-list dd{margin:0;text-align:right;font-variant-numeric:tabular-nums}.details-list .saving dd{color:var(--green)}.rule-panel{background:#f1f2eb;border-radius:13px;padding:14px 16px;margin-top:16px}.rule-panel summary{cursor:pointer;font-size:12px;font-weight:500;color:#626b56}.rule-panel p{font-size:11px;color:#7a826e;margin:10px 0 0;line-height:1.85}.quote-notice{font-size:11px;line-height:1.9;color:#989d91;margin:17px 2px}.edit-button{margin-top:22px}.single-scenario .scenario{max-width:none}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(min-width:720px){.shell{padding-top:42px}.intro{padding-top:38px}h1{font-size:35px}.card{padding:32px 37px 25px}.progress{margin-bottom:23px}.quote-hero{padding:32px}.quote-money{font-size:48px}.quote-money.is-range{font-size:40px}}
+@media(max-width:430px){.shell{padding:21px 18px 18px}.brand{padding-bottom:21px}.brand a{font-size:16px}.brandmark{width:39px;height:39px;border-radius:12px}.brand-sub{font-size:9px}.version{font-size:10px;padding:4px 9px}.intro{padding:26px 0 22px}h1{font-size:27px}.intro p{font-size:12px}.card{padding:22px 19px 19px;border-radius:19px}.progress{margin-bottom:18px}fieldset{margin-bottom:21px;padding-bottom:21px}.weight-row{gap:8px}.weight-row>select{flex-basis:80px;width:80px}.range-fields{gap:5px}.range-fields input{padding-left:9px;padding-right:7px}.dimension-inputs{gap:5px}.unit-input input{padding-left:8px;padding-right:26px}.unit-input span{right:7px;font-size:10px}.multiply{font-size:12px}.scenario-grid{grid-template-columns:1fr}.scenario{padding:18px 20px}.scenario-price{font-size:26px;margin-bottom:14px}.scenario .details-list>div{font-size:12px}.quote-money.is-range{font-size:32px}.quote-hero{padding:24px 15px}.result-intro{padding-top:22px}.section-heading{align-items:center}.privacy-note{font-size:9px}footer{font-size:9px}}
+.scenario-grid.single-scenario{grid-template-columns:1fr}
+@media(prefers-reduced-motion:reduce){*,*:before{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+  <div class="shell">
+    <header class="brand"><a href="#quote" aria-label="返回寄件询价首页"><span class="brandmark"><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="m5 10 11-6 11 6v13l-11 6L5 23V10Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="m5 10 11 6 11-6M16 16v13M11 7l11 6v5" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></span><span>独品一折<span class="brand-sub">快递超市 · 黑龙江发出</span></span></a><span class="version">自助询价</span></header>
+    <main>
+      <section id="quote-screen" aria-labelledby="quote-title">
+        <div class="intro"><span class="eyebrow">寄之前，心里有个数</span><h1 id="quote-title">这一件，大概要多少钱？</h1><p>填一填寄件信息，运费和会员优惠一眼看清。</p></div>
+        <div class="progress" aria-label="询价进度"><span class="active"><i>1</i>填写信息</span><b></b><span><i>2</i>查看报价</span></div>
+        <form id="quote-form" class="card" novalidate>
+          <div id="form-error" class="error" role="alert" hidden></div>
+          <fieldset><legend><span class="step-dot">01</span>寄到哪里</legend><div class="field"><label for="province">目的地省份／直辖市</label><select id="province" name="province"><option value="">请选择目的地</option></select></div><div id="city-field" class="field" hidden><label for="city">广东省目的地城市</label><select id="city" name="city"><option value="">请选择城市</option><option value="深圳">深圳市</option><option value="广州">广州市</option><option value="广东其他城市">广东其他城市</option></select><small>深圳单独计价，请选择对应城市。</small></div><p id="route-hint" class="muted-note">按门店目的地规则，为你匹配价格。</p></fieldset>
+          <fieldset><legend><span class="step-dot">02</span>大概有多重</legend><div class="segmented" role="group" aria-label="重量填写方式"><button type="button" data-mode="exact" class="selected" aria-pressed="true">填一个重量</button><button type="button" data-mode="range" aria-pressed="false">只知道大概范围</button></div><div class="weight-row"><div id="exact-fields" class="grow"><label class="sr-only" for="weight">估计重量</label><input id="weight" name="weight" type="text" inputmode="decimal" placeholder="输入大概重量" autocomplete="off"></div><div id="range-fields" class="range-fields grow" hidden><label class="sr-only" for="weight-min">最低估计重量</label><input id="weight-min" type="text" inputmode="decimal" placeholder="最少" autocomplete="off"><span>—</span><label class="sr-only" for="weight-max">最高估计重量</label><input id="weight-max" type="text" inputmode="decimal" placeholder="最多" autocomplete="off"></div><label class="sr-only" for="unit">重量单位</label><select id="unit" aria-label="重量单位"><option value="斤">斤</option><option value="kg">公斤</option></select></div><small id="weight-helper">1 斤 = 0.5 公斤 · 包装后的重量更接近实际</small></fieldset>
+          <fieldset class="dimensions-fieldset"><legend><span class="step-dot">03</span>外包装有多大<span class="optional">选填</span></legend><label class="check-row size-toggle"><input id="include-dimensions" type="checkbox"><span>我知道包装的长、宽、高</span></label><div id="dimensions-fields" hidden><div class="dimension-inputs"><div><label for="length">长</label><div class="unit-input"><input id="length" type="text" inputmode="decimal" placeholder="0" autocomplete="off"><span>cm</span></div></div><span class="multiply">×</span><div><label for="width">宽</label><div class="unit-input"><input id="width" type="text" inputmode="decimal" placeholder="0" autocomplete="off"><span>cm</span></div></div><span class="multiply">×</span><div><label for="height">高</label><div class="unit-input"><input id="height" type="text" inputmode="decimal" placeholder="0" autocomplete="off"><span>cm</span></div></div></div><small>量包装后的外侧尺寸，单位是厘米。</small></div><p id="dimension-hint" class="info-note"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.4"/><path d="M10 9v5m0-8v.5" stroke="currentColor" stroke-width="1.6"/></svg><span>暂时不知道也没关系，先看重量参考价。大件、蓬松物品建议补充尺寸。</span></p></fieldset>
+          <label class="member-box" for="member"><span class="member-icon" aria-hidden="true">✦</span><span class="member-copy"><strong>我有本店会员卡</strong><small>查看对应会员优惠，到店核实身份</small></span><input id="member" type="checkbox" role="switch"></label>
+          <button class="primary" type="submit">查看预估运费 <span aria-hidden="true">↗</span></button><p class="privacy-note">免注册 · 无需手机号 · 输入信息仅用于本次计算</p>
+        </form><p class="bottom-note">拿不准重量？选择一个范围，也能先有个参考。</p>
+      </section>
+      <section id="result-screen" hidden aria-labelledby="result-title"><button id="back-link" class="back-link" type="button">← 返回修改信息</button><div class="intro result-intro"><span class="eyebrow">这件包裹的运费参考</span><h1 id="result-title" tabindex="-1">算清楚，再出发。</h1><p id="destination-summary"></p></div><div id="quote-result" aria-live="polite"></div><button id="edit-button" class="primary edit-button" type="button">修改信息，重新计算 <span aria-hidden="true">↗</span></button><p class="bottom-note">返回后保留已填写内容，方便对比不同目的地。</p></section>
+    </main>
+    <footer><span>独品一折快递超市</span><span>预估供参考 · 到店实测核价</span></footer>
+  </div>
+  <script type="module">const RULES = {
+  "version": "2026-11-16-v1",
+  "shopName": "独品一折快递超市",
+  "originProvince": "黑龙江",
+  "volumeDivisors": [7000, 8000],
+  "ordinaryInside": {"firstKgCents": 500, "additionalKgCents": 300},
+  "ordinaryOutside": {"firstKgCents": 500, "additionalKgCents": 300, "heavyThresholdKg": 6, "heavyAdditionalKgCents": 400},
+  "special": {
+    "provinces": ["北京", "上海", "云南", "贵州", "四川", "重庆", "内蒙古", "甘肃", "宁夏", "广西"],
+    "cityExceptions": [{"province": "广东", "city": "深圳"}],
+    "firstKgCents": 700,
+    "perKgFrom2Cents": 500
+  },
+  "flatRoutes": [{"provinces": ["海南", "青海"], "perKgCents": 1000}, {"provinces": ["新疆", "西藏"], "perKgCents": 2500}],
+  "membership": {"discountNumerator": 9, "discountDenominator": 10, "ordinaryDiscountBasis": "additional_only", "specialFrom2DiscountBasis": "whole_order", "flatDiscountBasis": "whole_order", "roundDownWholeYuan": false},
+  "mainlandProvinces": ["北京", "天津", "河北", "山西", "内蒙古", "辽宁", "吉林", "黑龙江", "上海", "江苏", "浙江", "安徽", "福建", "江西", "山东", "河南", "湖北", "湖南", "广东", "广西", "海南", "重庆", "四川", "贵州", "云南", "西藏", "陕西", "甘肃", "青海", "宁夏", "新疆"],
+  "notice": "预估运费分别按体积系数7000、8000测算；最终以包装后实测及实际承运规则核定。到店额外让利不由程序自动计算。"
+};
+
+const DEFAULT_RULES = RULES;
+class InputError extends Error { constructor(message, field) { super(message); this.field = field; } }
+
+// Exact decimal arithmetic for measurements: no accidental rounding of 2.0001kg to 2kg.
+function decimal(value, field) {
+  const text = String(value ?? '').trim();
+  if (!/^(?:\d+(?:\.\d*)?|\.\d+)$/.test(text) || text.length > 24) throw new InputError(`${field}需要填写有效的正数。`, field);
+  const [whole = '0', fraction = ''] = text.split('.');
+  const result = [BigInt((whole || '0') + fraction), 10n ** BigInt(fraction.length)];
+  if (result[0] <= 0n) throw new InputError(`${field}必须大于零。`, field);
+  return result;
+}
+const multiply = (a,b) => [a[0]*b[0],a[1]*b[1]];
+const quotient = (a,b) => [a[0],a[1]*BigInt(b)];
+const compare = (a,b) => a[0]*b[1] < b[0]*a[1] ? -1 : a[0]*b[1] > b[0]*a[1] ? 1 : 0;
+const max = (a,b) => compare(a,b) >= 0 ? a : b;
+function ceilKg(a) {
+  const n = (a[0]+a[1]-1n)/a[1];
+  if (n > BigInt(Math.floor(Number.MAX_SAFE_INTEGER / 100000))) throw new InputError('输入的重量或尺寸过大，请核对单位。', 'weight');
+  return Number(n);
+}
+const approximate = a => Number((Number(a[0])/Number(a[1])).toFixed(6));
+const amount = cents => Number((cents/100).toFixed(2));
+function normalizeProvince(value) {
+  return String(value ?? '').trim().replace(/特别行政区$|壮族自治区$|回族自治区$|维吾尔自治区$|自治区$|省$|市$/g,'').replace(/^内蒙$/, '内蒙古');
+}
+const normalizeCity = value => String(value ?? '').trim().replace(/市$/, '');
+
+function resolveRoute(destination, rules) {
+  const province = normalizeProvince(destination?.province);
+  const city = normalizeCity(destination?.city);
+  if (!province) throw new InputError('请补充目的地省份或直辖市。', 'destination.province');
+  if (!rules.mainlandProvinces.includes(province)) return {status:'needs_confirmation',reason:'该目的地尚未配置报价规则，请联系门店确认。',province,city};
+  const cityRules = rules.special.cityExceptions.filter(r => r.province === province);
+  if (cityRules.length && !city) throw new InputError('请补充目的地城市，以区分深圳等单独计价城市。', 'destination.city');
+  const flat = rules.flatRoutes.find(r => r.provinces.includes(province));
+  if (flat) return {status:'ready',type:'flat',province,city,perKgCents:flat.perKgCents,label:`${province}按整件公斤计价`};
+  if (rules.special.provinces.includes(province) || cityRules.some(r=>r.city===city)) return {status:'ready',type:'special',province,city,label:'门店特殊地区计价'};
+  const inside = province===rules.originProvince;
+  return {status:'ready',type:inside?'inside':'outside',province,city,label:inside?'黑龙江省内普通计价':'普通省外计价'};
+}
+
+function priceForKg(kg, route, member, rules = DEFAULT_RULES) {
+  if (!Number.isSafeInteger(kg) || kg<1) throw new InputError('计费重量应为正整数公斤。','weight');
+  let first=0, additional=0, perKg=null, discountBase=0;
+  if (route.type==='flat') { additional=kg*route.perKgCents; perKg=route.perKgCents; discountBase=additional; }
+  else if (route.type==='special') {
+    if (kg===1) first=rules.special.firstKgCents;
+    else { additional=kg*rules.special.perKgFrom2Cents; perKg=rules.special.perKgFrom2Cents; discountBase=additional; }
+  } else {
+    const rule=route.type==='inside'?rules.ordinaryInside:rules.ordinaryOutside;
+    first=rule.firstKgCents;
+    perKg=(route.type==='outside' && kg>=rule.heavyThresholdKg)?rule.heavyAdditionalKgCents:rule.additionalKgCents;
+    additional=(kg-1)*perKg; discountBase=additional;
+  }
+  const base=first+additional;
+  const paidDiscountBase=member?Math.round(discountBase*rules.membership.discountNumerator/rules.membership.discountDenominator):discountBase;
+  const calculatedTotal=base-discountBase+paidDiscountBase;
+  const total=rules.membership.roundDownWholeYuan&&member?Math.floor(calculatedTotal/100)*100:calculatedTotal;
+  return {chargeableKg:kg,baseCents:base,totalCents:total,discountCents:base-total,firstKgFee:amount(first),otherFeeBeforeDiscount:amount(additional),discount:amount(base-total),total:amount(total),continuationOrWholeOrderUnitPrice:perKg===null?null:amount(perKg),method:route.type==='flat'?'整件公斤数乘单价':route.type==='special'?(kg===1?'首公斤固定价':'超过1kg后整件每公斤5元'):'首重加续重'};
+}
+
+function calculateShippingQuote(input, rules=DEFAULT_RULES) {
+  try {
+    if (!input || typeof input!=='object') throw new InputError('请提供询价信息。','input');
+    if (typeof input.member!=='boolean') throw new InputError('请选择是否为本店会员。','member');
+    const route=resolveRoute(input.destination,rules);
+    if (route.status!=='ready') return route;
+    const w=input.weight;
+    if (!w) throw new InputError('请填写重量或重量范围。','weight');
+    const unit=String(w.unit??'');
+    if (!['kg','公斤','千克','jin','斤'].includes(unit)) throw new InputError('重量单位请选择斤或公斤。','weight.unit');
+    const isRange=w.min!==undefined || w.max!==undefined;
+    let low=decimal(isRange?w.min:w.value,'weight.min');
+    let high=decimal(isRange?w.max:w.value,'weight.max');
+    if (['jin','斤'].includes(unit)) { low=quotient(low,2); high=quotient(high,2); }
+    if (compare(low,high)>0) throw new InputError('最低估计重量不能大于最高重量。','weight');
+    let volume=null;
+    if (input.dimensions && Object.values(input.dimensions).some(v=>v!=='' && v!==null && v!==undefined)) {
+      const d=input.dimensions;
+      volume=multiply(multiply(decimal(d.lengthCm,'lengthCm'),decimal(d.widthCm,'widthCm')),decimal(d.heightCm,'heightCm'));
+    }
+    const cases=volume?rules.volumeDivisors.map(divisor=>({divisor,volumeWeight:quotient(volume,divisor)})):[{divisor:null,volumeWeight:null}];
+    const scenarios=cases.map(({divisor,volumeWeight})=>{
+      const lo=ceilKg(volumeWeight?max(low,volumeWeight):low);
+      const hi=ceilKg(volumeWeight?max(high,volumeWeight):high);
+      // Each rate segment is monotone; checking both endpoints and all segment edges
+      // also covers future discounts that could make a threshold non-monotone.
+      const edges=[lo,hi,1,2,rules.ordinaryOutside.heavyThresholdKg-1,rules.ordinaryOutside.heavyThresholdKg];
+      const samples=[...new Set(edges.filter(n=>n>=lo&&n<=hi))].sort((a,b)=>a-b).map(n=>priceForKg(n,route,input.member,rules));
+      const minCents=Math.min(...samples.map(s=>s.totalCents));
+      const maxCents=Math.max(...samples.map(s=>s.totalCents));
+      return {volumeDivisor:divisor,volumeWeightKg:volumeWeight?approximate(volumeWeight):null,chargeableWeightRangeKg:[lo,hi],minAmount:amount(minCents),maxAmount:amount(maxCents),samples};
+    });
+    return {status:'quoted',rulesVersion:rules.version,destination:{province:route.province,city:route.city},routeType:route.type,routeLabel:route.label,member:input.member,actualWeightRangeKg:[approximate(low),approximate(high)],dimensionsProvided:!!volume,scope:volume?'two_volume_divisor_scenarios':'actual_weight_only',minAmount:Math.min(...scenarios.map(s=>s.minAmount)),maxAmount:Math.max(...scenarios.map(s=>s.maxAmount)),scenarios,notice:volume?rules.notice:'当前仅按实重范围测算，尚未核算体积重；包装较大时运费可能更高。'};
+  } catch(error) {
+    if (error instanceof InputError) return {status:'needs_input',field:error.field,message:error.message};
+    throw error;
+  }
+}
+
+const $=id=>document.getElementById(id);
+const form=$('quote-form');
+let mode='exact',lastQuote=null;
+const provinceLabels={北京:'北京市',天津:'天津市',上海:'上海市',重庆:'重庆市',内蒙古:'内蒙古',广西:'广西',宁夏:'宁夏',新疆:'新疆',西藏:'西藏'};
+DEFAULT_RULES.mainlandProvinces.forEach(p=>{const option=document.createElement('option');option.value=p;option.textContent=provinceLabels[p]??`${p}省`;$('province').append(option);});
+const otherOption=document.createElement('option');otherOption.value='其他地区';otherOption.textContent='其他地区（联系门店确认）';$('province').append(otherOption);
+
+function setMode(next){mode=next;document.querySelectorAll('[data-mode]').forEach(b=>{const selected=b.dataset.mode===mode;b.classList.toggle('selected',selected);b.setAttribute('aria-pressed',String(selected));});$('exact-fields').hidden=mode!=='exact';$('range-fields').hidden=mode!=='range';lastQuote=null;}
+document.querySelectorAll('[data-mode]').forEach(b=>b.addEventListener('click',()=>setMode(b.dataset.mode)));
+function refreshProvince(){const p=$('province').value;$('city-field').hidden=p!=='广东';let hint='按门店目的地规则，为你匹配价格。';if(p==='黑龙江')hint='省内普通件：首公斤5元，续重每公斤3元。';else if(['海南','青海'].includes(p))hint='该地区按整件计费重量，每公斤10元。';else if(['新疆','西藏'].includes(p))hint='该地区按整件计费重量，每公斤25元。';else if(DEFAULT_RULES.special.provinces.includes(p))hint='特殊地区：1公斤7元；从2公斤起，整件每公斤5元。';else if(p)hint='系统会按目的地和计费重量匹配门店价格。';$('route-hint').textContent=hint;}
+$('province').addEventListener('change',refreshProvince);
+$('include-dimensions').addEventListener('change',()=>{const on=$('include-dimensions').checked;$('dimensions-fields').hidden=!on;$('dimension-hint').hidden=on;});
+$('unit').addEventListener('change',()=>{$('weight-helper').textContent=$('unit').value==='斤'?'1 斤 = 0.5 公斤 · 包装后的重量更接近实际':'1 公斤 = 2 斤 · 包装后的重量更接近实际';});
+form.addEventListener('input',()=>{lastQuote=null;$('form-error').hidden=true;});
+form.addEventListener('change',()=>{lastQuote=null;});
+function showError(q){const error=$('form-error');error.textContent=q.message??q.reason;error.hidden=false;const ids={'destination.province':'province','destination.city':'city',weight:mode==='exact'?'weight':'weight-min','weight.min':mode==='exact'?'weight':'weight-min','weight.max':mode==='exact'?'weight':'weight-max','weight.unit':'unit',lengthCm:'length',widthCm:'width',heightCm:'height',member:'member'};const target=$(ids[q.field]??'province');target?.focus();error.scrollIntoView({block:'center',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});}
+const money=n=>Number(n).toFixed(2);
+const number=n=>new Intl.NumberFormat('zh-CN',{maximumFractionDigits:3}).format(n);
+const span=(a,b,suffix='')=>a===b?`${number(a)}${suffix}`:`${number(a)}—${number(b)}${suffix}`;
+const priceSpan=(a,b)=>a===b?money(a):`${money(a)}—${money(b)}`;
+const esc=text=>String(text).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function ruleDescription(q){if(q.routeType==='flat'){const rate=['海南','青海'].includes(q.destination.province)?10:25;return `该地区不分首重、续重，按整件计费重量每公斤${rate}元计算。${q.member?'会员整单九折，金额保留到分。':''}`;}if(q.routeType==='special')return `计费重量为1公斤时收7元，从2公斤起整件按每公斤5元计价。${q.member?'会员1公斤不打折；从2公斤起整单九折，金额保留到分。':''}`;if(q.routeType==='inside')return `省内首公斤5元，超出部分每公斤3元。${q.member?'会员首重原价，续重费用九折，金额保留到分。':''}`;return `普通省外：计费重量不足6公斤时，首公斤5元、续重每公斤3元；计费重量达到6公斤时，首公斤5元、全部续重每公斤4元。${q.member?'会员首重原价，续重费用九折，金额保留到分。':''}`;}
+function renderScenario(s,q,i){const baseMin=Math.min(...s.samples.map(v=>v.baseCents))/100,baseMax=Math.max(...s.samples.map(v=>v.baseCents))/100;const discountMin=Math.min(...s.samples.map(v=>v.discount)),discountMax=Math.max(...s.samples.map(v=>v.discount));const oneWeight=s.chargeableWeightRangeKg[0]===s.chargeableWeightRangeKg[1];const sample=s.samples[0];let rows=`<div><dt>计费重量</dt><dd>${span(...s.chargeableWeightRangeKg,' 公斤')}</dd></div>`;if(s.volumeWeightKg!==null)rows+=`<div><dt>体积重约</dt><dd>${number(s.volumeWeightKg)} 公斤</dd></div>`;if(oneWeight){if(sample.firstKgFee>0)rows+=`<div><dt>首重费用</dt><dd>¥${money(sample.firstKgFee)}</dd></div>`;if(sample.otherFeeBeforeDiscount>0)rows+=`<div><dt>${q.routeType==='flat'||q.routeType==='special'?'整件费用':'续重费用'}</dt><dd>¥${money(sample.otherFeeBeforeDiscount)}</dd></div>`;}else rows+=`<div><dt>优惠前运费</dt><dd>¥${priceSpan(baseMin,baseMax)}</dd></div>`;if(q.member)rows+=`<div class="saving"><dt>会员优惠${oneWeight?'':'约'}</dt><dd>−¥${priceSpan(discountMin,discountMax)}</dd></div>`;return `<article class="scenario"><div class="scenario-label"><span>${s.volumeDivisor?`按体积系数 ${s.volumeDivisor}`:'仅按实重测算'}</span><b>${s.volumeDivisor?`方案 ${String(i+1).padStart(2,'0')}`:'重量参考'}</b></div><div class="scenario-price"><span>¥</span>${priceSpan(s.minAmount,s.maxAmount)}</div><dl class="details-list">${rows}</dl></article>`;}
+function render(q){const destination=q.destination.province+(q.destination.city&&q.destination.city!==q.destination.province?` · ${q.destination.city}`:'');$('destination-summary').textContent=`寄往 ${destination} · ${q.member?'本店会员':'普通顾客'}`;const isRange=q.minAmount!==q.maxAmount;const headline=q.dimensionsProvided?(isRange?'预估运费区间':'预估运费'):(isRange?'按重量测算的参考区间':'按重量测算的参考价');const dimsWarning=q.dimensionsProvided?'分别按7000、8000两种体积系数估算，实际以适用承运规则核定。':'尚未核算体积重。若包装较大或蓬松，实际运费可能更高，可返回补充尺寸。';$('quote-result').innerHTML=`<div class="quote-hero"><div class="quote-label">${headline}</div><div class="quote-money ${isRange?'is-range':''}"><span class="currency">¥</span>${priceSpan(q.minAmount,q.maxAmount)}<span class="suffix">元</span></div><div class="pills"><span class="pill">实重 ${span(...q.actualWeightRangeKg,' 公斤')}</span><span class="pill ${q.member?'green':''}">${q.member?'已计算会员优惠':'按普通价格计算'}</span></div></div><div class="quote-callout">${dimsWarning}</div><div class="section-heading"><h2>这笔运费怎么算</h2><span>${q.dimensionsProvided?'实重与体积重取大后，按整公斤进位':'不足整公斤，向上进位'}</span></div><div class="scenario-grid ${q.scenarios.length===1?'single-scenario':''}">${q.scenarios.map((s,i)=>renderScenario(s,q,i)).join('')}</div><details class="rule-panel"><summary>${esc(q.routeLabel)} · 查看计价规则</summary><p>${esc(ruleDescription(q))}</p><p>斤与公斤：1斤=0.5公斤。计费重量不足整公斤时向上进位，例如2.1公斤按3公斤计算。${q.dimensionsProvided?'本次体积重按包装长×宽×高÷7000、÷8000分别计算。':''}</p></details><p class="quote-notice">预估仅供参考，最终以包装后实测及实际承运规则核定。${q.dimensionsProvided?'按体积重计费时，在保护好物品的前提下，包装更紧凑可能更省运费。':''}</p>`;}
+function route(){const result=location.hash==='#result'&&lastQuote;$('quote-screen').hidden=!!result;$('result-screen').hidden=!result;if(result){render(lastQuote);window.scrollTo(0,0);$('result-title').focus({preventScroll:true});}else{if(location.hash==='#result')history.replaceState(null,'','#quote');}}
+form.addEventListener('submit',e=>{e.preventDefault();const input={destination:{province:$('province').value,city:$('province').value==='广东'?$('city').value:''},weight:mode==='exact'?{value:$('weight').value,unit:$('unit').value}:{min:$('weight-min').value,max:$('weight-max').value,unit:$('unit').value},member:$('member').checked};if($('include-dimensions').checked){input.dimensions={lengthCm:$('length').value,widthCm:$('width').value,heightCm:$('height').value};if(!Object.values(input.dimensions).some(Boolean)){showError({message:'请输入包装后的长、宽、高，或取消尺寸选项先看重量参考价。',field:'lengthCm'});return;}}const q=calculateShippingQuote(input);if(q.status!=='quoted'){showError(q);return;}$('form-error').hidden=true;lastQuote=q;if(location.hash==='#result')route();else location.hash='result';});
+function back(){location.hash='quote';window.scrollTo(0,0);}
+$('back-link').addEventListener('click',back);$('edit-button').addEventListener('click',back);window.addEventListener('hashchange',route);refreshProvince();route();
+</script>
+</body>
+</html>
